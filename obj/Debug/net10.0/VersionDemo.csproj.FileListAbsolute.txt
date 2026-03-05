@@ -1,0 +1,14 @@
+C:\dotnet\VersionDemo\bin\Debug\net10.0\VersionDemo.exe
+C:\dotnet\VersionDemo\bin\Debug\net10.0\VersionDemo.deps.json
+C:\dotnet\VersionDemo\bin\Debug\net10.0\VersionDemo.runtimeconfig.json
+C:\dotnet\VersionDemo\bin\Debug\net10.0\VersionDemo.dll
+C:\dotnet\VersionDemo\bin\Debug\net10.0\VersionDemo.pdb
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.AssemblyInfoInputs.cache
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.AssemblyInfo.cs
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.csproj.CoreCompileInputs.cache
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.dll
+C:\dotnet\VersionDemo\obj\Debug\net10.0\refint\VersionDemo.dll
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.pdb
+C:\dotnet\VersionDemo\obj\Debug\net10.0\VersionDemo.genruntimeconfig.cache
+C:\dotnet\VersionDemo\obj\Debug\net10.0\ref\VersionDemo.dll
