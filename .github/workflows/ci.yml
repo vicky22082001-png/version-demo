@@ -1,27 +1,45 @@
-name: CI Build
+name: Deploy Pipeline
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - development
+      - staging
+      - main
 
 jobs:
-  build:
-    runs-on: windows-latest
+
+  deploy-dev:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: self-hosted
+    environment: dev
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.0.x
+      - name: Deploy to DEV
+        run: |
+          xcopy /E /I /Y . C:\deploy\dev
 
-      - name: Restore
-        run: dotnet restore
+  deploy-staging:
+    if: github.ref == 'refs/heads/staging'
+    runs-on: self-hosted
+    environment: staging
 
-      - name: Build
-        run: dotnet build
+    steps:
+      - uses: actions/checkout@v4
 
-      - name: Publish
-        run: dotnet publish -c Release -o publish
+      - name: Deploy to STAGING
+        run: |
+          xcopy /E /I /Y . C:\deploy\staging
+
+  deploy-main:
+    if: github.ref == 'refs/heads/main'
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to MAIN
+        run: |
+          xcopy /E /I /Y . C:\deploy\main
